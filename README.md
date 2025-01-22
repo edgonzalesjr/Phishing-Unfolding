@@ -112,16 +112,18 @@
 <br/>
 <img src="https://imgur.com/v99S48G.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>It launch another process systeminfo.exe to retrieve information about the machine, logged in user and privilege, then enumerates the users, local groups and downloaded the Powershell script. There were process creation that accessed the network file share, copy the files in the network file share, then deletes the created file share, compressed the files, then started to exfiltrate the data..</b>
+<b>It launch another process systeminfo.exe to retrieve information about the machine, logged in user and privilege, then enumerates the users, local groups and downloaded the Powershell script. There were process creation that accessed the network file share, copy the files in the network file share, then deletes the created file share, compressed the files, then started to exfiltrate the data.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/hgsEMXz.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<img src="https://imgur.com/J8QaXy8.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-
-
+<img src="https://imgur.com/eC2QZbT.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Write the case and close the alert.</b>
+<br/>
 
 ## Acknowledgements
 
