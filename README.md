@@ -2,7 +2,9 @@
 ## Practical Exercises
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/thfKKZQ.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/0kheHlT.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>On the Dashboard to see the status of the alerts. We'll have the Alert queue for the breakdown of the reported alerts.</b>
 <br/>
