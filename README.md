@@ -10,7 +10,9 @@
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/raoWABU.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/AoNqbkH.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <b>To approach in investigating the alerts, it's better to sort based on the severity. Start with the critical alerts. If there's none, check the other alerts for High alerts.</b>
 <br/>
@@ -18,7 +20,7 @@
 <p align="center">
 <img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>We'll havee one High alert and take a look at the descriptions.</b>
+<b>We'll have Low alert and take a look at the descriptions.</b>
 <br/>
 
 <p align="center">
