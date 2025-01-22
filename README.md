@@ -4,19 +4,19 @@
 <p align="center">
 <img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>On the Dashboard to see the status of the alerts. We'll have the Alert queue for the breakdown of the reported alerts.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>To approach in investigating the alerts, it's better to sort based on the severity. Start with the critical alerts. If there's none, check the other alerts for High alerts.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>We'll havee one High alert and take a look at the descriptions.</b>
 <br/>
 
 <p align="center">
