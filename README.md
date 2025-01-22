@@ -40,13 +40,23 @@
 <br/>
 <img src="https://imgur.com/zuY1TPR.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Search for the process name. Taskhostw.exe is a system file of the Windows operating system. It stands for Task’s Host for Windows. It's main function is to start the Windows services based on DLLs whenever the computer boots up. Seems legitimate is located in the C:\Windows\System32 folder and seems no other spawned processes.</b>
+<img src="https://imgur.com/dyqowsm.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/QtBLPcR.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Search for the process name. Taskhostw.exe is a system file of the Windows operating system. It stands for Task’s Host for Windows. It's main function is to start the Windows services based on DLLs whenever the computer boots up. Seems legitimate is located in the C:\Windows\System32 folder and no other spawned processes.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/jl4vogN.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<img src="https://imgur.com/10V7Z6T.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/10V7Z6T.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/cF967eG.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Write the case and close the alert.</b>
 <br/>
 
 <p align="center">
