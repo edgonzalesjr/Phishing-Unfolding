@@ -125,6 +125,30 @@
 <b>Write the case and close the alert.</b>
 <br/>
 
+<p align="center">
+<img src="https://imgur.com/UNzF3Sp.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/7zlMhWs.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>We'll have next alert and take a look at the descriptions and take ownership.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/EvcKu3Z.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>There's an attachment in the email which is a Powershell script. Let's take a look with a notepad on the Analyst VM. The script doesn't seems malicious and it is indeed a script for automating Windows update.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/bHz3AG0.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/MB2vIwa.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/VpaHXnZ.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Write the case and close the alert.</b>
+<br/>
+ 
 ## Acknowledgements
 
 This project combines ideas and methods from various sources, such as the TryHackMe SOC Simulator Phishing Unfolding room and my IT experience. These resources provided the fundamental information and techniques, which were then modified in light of practical uses.
