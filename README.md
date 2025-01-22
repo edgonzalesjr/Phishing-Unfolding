@@ -18,9 +18,11 @@
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/izFB0go.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>We'll have Low alert and take a look at the descriptions.</b>
+<img src="https://imgur.com/dFZ0PZn.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>We'll have one Low alert and take a look at the descriptions and take ownership.</b>
 <br/>
 
 <p align="center">
