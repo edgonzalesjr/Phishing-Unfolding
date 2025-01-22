@@ -60,33 +60,59 @@
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/c0g0VJb.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
-<br/>
-
-<p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
-<br/>
-<b>.</b>
+<b>We'll have High alert and take a look at the descriptions and take ownership.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/53GT9dS.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<img src="https://imgur.com/y2rL8gh.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-
-<p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/BzjemIG.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>Let's go ahead on the Splunk SIEM and search for the process name. It's already suspicious that the process parent name is powershell.exe and it was launched on the Downloads folder with commandline contains base64 string.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/9nhK216.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>Let's take a look why powershell.exe is the parent process of nslookup.exe. Parent.parent.pid: 3728 is the Powershell process id. There were many events of powershell that were executed.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/zlSAt9f.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/SPmkKdC.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Since powershell.exe is being used in suspicious activity, let's search all events relating to powershell.exe. Powershell was executed to connect and download on remote machine to download a Powershell script named Powercat.ps1 which is a privilege escalation script. It was launched to connect to Command and control to ngrok.io domain name.</b>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/NimCeI9.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/qPknVma.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/QWcbg4B.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/eSN1tfa.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/dAdWLw5.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/yq9G1dm.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/3B2OLBM.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/rSIvqx9.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/yorFAfK.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/hOKVLit.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/v99S48G.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>It launch another process systeminfo.exe to retrieve information about the machine, logged in user and privilege, then enumerates the users, local groups and downloaded the Powershell script. There were process creation that accessed the network file share, copy the files in the network file share, then deletes the created file share, compressed the files, then started to exfiltrate the data..</b>
 <br/>
 
 <p align="center">
