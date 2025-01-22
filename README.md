@@ -26,15 +26,21 @@
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/ee5pmbO.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<b>Let's go ahead on the Splunk SIEM. Take a look at the Data Summary for available sources.</b>
 <br/>
 
 <p align="center">
-<img src="https://imgur.com/" height="90%" width="90%" alt="Device Specification"/>
+<img src="https://imgur.com/091qVBv.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>.</b>
+<img src="https://imgur.com/WpD41zF.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/GdIqX8M.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<img src="https://imgur.com/zuY1TPR.png" height="90%" width="90%" alt="Device Specification"/>
+<br/>
+<b>Search for the process name. Taskhostw.exe is a system file of the Windows operating system. It stands for Task’s Host for Windows. It's main function is to start the Windows services based on DLLs whenever the computer boots up. Seems legitimate is located in the C:\Windows\System32 folder and seems no other spawned processes.</b>
 <br/>
 
 <p align="center">
