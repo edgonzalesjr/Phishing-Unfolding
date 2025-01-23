@@ -27,12 +27,13 @@ To equip with the practical skills required to respond to and investigate a live
 
 ## Practical Exercises
 
+- Low Alert
 <p align="center">
 <img src="https://imgur.com/thfKKZQ.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <img src="https://imgur.com/0kheHlT.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>On the Dashboard to see the status of the alerts. We'll have the Alert queue for the breakdown of the reported alerts.</b>
+<b>On the Dashboard, you can view the status of alerts. The Alert queue provides a breakdown of the reported alerts.</b>
 <br/>
 
 <p align="center">
@@ -40,7 +41,7 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/AoNqbkH.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>To approach in investigating the alerts, it's better to sort based on the severity. Start with the critical alerts. If there's none, check the other alerts for High alerts.</b>
+<b>When investigating alerts, it's best to sort them by severity. Start with critical alerts first. If there are no critical alerts, check for high alerts next.</b>
 <br/>
 
 <p align="center">
@@ -48,13 +49,13 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/dFZ0PZn.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>We'll have one Low alert and take a look at the descriptions and take ownership.</b>
+<b>We will have one low alert, review the descriptions, and take ownership.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/ee5pmbO.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Let's go ahead on the Splunk SIEM. Take a look at the Data Summary for available sources.</b>
+<b>Let's proceed with using Splunk SIEM. Please check the Data Summary for available sources.</b>
 <br/>
 
 <p align="center">
@@ -70,7 +71,7 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/QtBLPcR.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Search for the process name. Taskhostw.exe is a system file of the Windows operating system. It stands for Task’s Host for Windows. It's main function is to start the Windows services based on DLLs whenever the computer boots up. Seems legitimate is located in the C:\Windows\System32 folder and no other spawned processes.</b>
+<b>Search for the process name. Taskhostw.exe is a system file associated with the Windows operating system. It stands for "Task Host for Windows," and its primary function is to launch Windows services that rely on dynamic link libraries (DLLs) during the computer's boot-up process. This file appears legitimate, as it is located in the C:\Windows\System32 folder and does not spawn any other processes.</b>
 <br/>
 
 <p align="center">
@@ -82,13 +83,14 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/cF967eG.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Write the case and close the alert.</b>
+<b>Document the case and close the alert.</b>
 <br/>
 
+- High Alert
 <p align="center">
 <img src="https://imgur.com/c0g0VJb.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>We'll have High alert and take a look at the descriptions and take ownership.</b>
+<b>We will have one high alert, review the descriptions, and take ownership.</b>
 <br/>
 
 <p align="center">
@@ -98,13 +100,13 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/BzjemIG.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Let's go ahead on the Splunk SIEM and search for the process name. It's already suspicious that the process parent name is powershell.exe and it was launched on the Downloads folder with commandline contains base64 string.</b>
+<b>Let's check the Splunk SIEM for the process name. It is suspicious that the parent process name is powershell.exe and it was launched from the Downloads folder with a command line containing a base64 string.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/9nhK216.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Let's take a look why powershell.exe is the parent process of nslookup.exe. Parent.parent.pid: 3728 is the Powershell process id. There were many events of powershell that were executed.</b>
+<b>Let's examine why powershell.exe is the parent process of nslookup.exe. The parent process ID of Powershell is 3728. Several instances of Powershell have been executed.</b>
 <br/>
 
 <p align="center">
@@ -112,7 +114,7 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/SPmkKdC.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Since powershell.exe is being used in suspicious activity, let's search all events relating to powershell.exe. Powershell was executed to connect and download on remote machine to download a Powershell script named Powercat.ps1 which is a privilege escalation script. It was launched to connect to Command and control to ngrok.io domain name.</b>
+<b>Since PowerShell.exe is involved in suspicious activity, we should investigate all events related to this executable. PowerShell was used to connect to a remote machine and download a script named Powercat.ps1. This utility tool allows for data transmission over TCP, UDP, DNS, and assists in payload generation. It was launched to connect to a command and control server at the ngrok.io domain.</b>
 <br/>
 
 <p align="center">
@@ -138,7 +140,7 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/v99S48G.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>It launch another process systeminfo.exe to retrieve information about the machine, logged in user and privilege, then enumerates the users, local groups and downloaded the Powershell script. There were process creation that accessed the network file share, copy the files in the network file share, then deletes the created file share, compressed the files, then started to exfiltrate the data.</b>
+<b>It launched another process, systeminfo.exe, to retrieve information about the machine, logged-in user, and privileges. Then, it enumerated the users and local groups and downloaded the PowerShell script. There were processes created that accessed the network file share, using Robocopy to copy the files from the share. After that, it deleted the created file share, compressed the files, and then started to exfiltrate the data.</b>
 <br/>
 
 <p align="center">
@@ -148,21 +150,22 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/eC2QZbT.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Write the case and close the alert.</b>
+<b>Document the case and close the alert.</b>
 <br/>
 
+- Suspicious Attachment found in email
 <p align="center">
 <img src="https://imgur.com/UNzF3Sp.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
 <img src="https://imgur.com/7zlMhWs.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>We'll have next alert and take a look at the descriptions and take ownership.</b>
+<b>We will have the next alert, review the descriptions and take ownership.</b>
 <br/>
 
 <p align="center">
 <img src="https://imgur.com/EvcKu3Z.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>There's an attachment in the email which is a Powershell script. Let's take a look with a notepad on the Analyst VM. The script doesn't seems malicious and it is indeed a script for automating Windows update.</b>
+<b>There is an attachment in the email that contains a PowerShell script. Let's examine it using Notepad on the Analyst VM. The script does not appear to be malicious and is actually designed for automating Windows updates.</b>
 <br/>
 
 <p align="center">
@@ -172,7 +175,7 @@ To equip with the practical skills required to respond to and investigate a live
 <br/>
 <img src="https://imgur.com/VpaHXnZ.png" height="90%" width="90%" alt="Device Specification"/>
 <br/>
-<b>Write the case and close the alert.</b>
+<b>Document the case and close the alert.</b>
 <br/>
 
 ## Outcome
