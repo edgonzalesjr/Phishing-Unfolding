@@ -1,3 +1,29 @@
+## Objective
+
+To equip with the practical skills required to respond to and investigate a live phishing attack within a corporate network. Actively monitor and analyze real-time security alerts, identifying key malicious activities such as PowerShell executions, reverse shell connections, and suspicious DNS requests. Develop the ability to prioritize and investigate alerts, utilizing advanced cybersecurity tools like SIEM and virtual machines for in-depth analysis. Document findings in detailed case reports, refine their incident response and reporting skills. To gain a comprehensive understanding of how phishing attacks unfold in real-time and how to effectively mitigate and document such incidents in a fast-paced, high-pressure environment.
+
+### Skills Learned
+
+- Alert Management & Prioritization
+  - Prioritizing and investigating alerts based on severity (critical, high, medium, low).
+  - Gaining proficiency in understanding alert contexts and determining the most critical alerts to investigate first.
+- Investigating & Validating Alerts
+  - Improving skills in recognizing true positives and false positives.
+  - Using security tools to validate suspicious activities, correlating log data from different sources (e.g., SIEM, sysmon logs) to verify alerts.
+- Hands-on Use of Security Tools    
+  - Effectively utilizing SIEM to search and analyze security logs and events for indicators of compromise (IOCs).
+  - Using virtual machines (VMs) for secure and isolated analysis of email attachments and potential threats.  
+- Incident Documentation & Reporting    
+  - Creating clear, concise, and well-organized reports that document the findings from security investigations.
+  - Clearly categorize alerts as true positives or false positives. Document the steps taken during the investigation for future reference.
+- Data Exfiltration & Attack Chain Analysis
+  - Identifying the signs of data exfiltration and privilege escalation during a live attack scenario. (e.g., use of PowerShell, file transfers).    
+  - Track and document attack chains as they happen. Connect different stages of the attack for complete incident analysis.
+
+### Tools Used
+
+- Splunk SIEM: Used for querying logs, filtering events, and correlating data from multiple sources to verify the legitimacy of alerts.    
+- Analyst Workstation (VM): A dedicated virtual machine used to safely analyze suspicious email alerts and attachments, with tools for reviewing potentially dangerous files and performing incident analysis in a secure environment.
 
 ## Practical Exercises
 
@@ -148,6 +174,20 @@
 <br/>
 <b>Write the case and close the alert.</b>
 <br/>
+
+## Outcome
+
+- Incident Response Skills  
+  - Gained practical experience in real-time phishing attack scenarios, learning to quickly assess and respond to security alerts.  
+  - Developed a strong understanding of how to use cybersecurity tools (SIEM, VMs) to conduct detailed investigations and confirm alerts accurately.
+- Alert Management & Analysis
+  - Proven ability to effectively manage, prioritize, and investigate alerts in a fast-paced environment, ensuring that high-severity incidents are addressed first and efficiently.
+- Documentation & Reporting
+  - Learned to create clear and useful reports. These reports detail the findings of each investigation, outline the steps taken, and state the resolution status for each alert.
+- Threat Detection & Mitigation
+  - Improved ability to spot complicated phishing tactics. This includes recognizing PowerShell-based privilege escalation, reverse shell activity, and data theft while looking at the entire attack process.
+- Real-World Cybersecurity Challenges
+  - Prepared to effectively apply incident response techniques in real-world cybersecurity settings, with a solid understanding of how to respond to phishing attacks, decrease response time, and mitigate ongoing threats.
  
 ## Acknowledgements
 
